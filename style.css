@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/* reset-css */
+.body { 
+    background-color: rgb(189, 9, 9);
+}
+.body__header {
+    width: calc(100% - 60px);
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.header__logo {
+    width: 100px;
+}
+.header__navigation {
+    display: flex;
+    width: calc(70% - 100px);
+    justify-content: space-between;
+}
+.navigation__link {
+    color: white;
+    
+}
+.navigation__icons{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.navigation__society {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.society__link>img {
+width: 40px;
+}
+.main__background{
+    background-image: url(imges/main__background.png);
+    height: 1024px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+.body__main {
+}
+.main__background {
+}
+.main__nations {
+}
+.nations__zogolovok {
+    text-align: center;
+}
+.nations__kartinki {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.kartinki__t{
+width: 30%;
+text-align: center;
+}
+.nations__Russia_k {
+    width: 100%;
+}
+.nations__Germany_k {
+    width: 100%;
+}
+.nations__USA_k {
+    width: 100%;
+}
+.nation{
+    transition: 1.5s;
+    cursor: pointer;
+}
+.nation:hover{
+transform: scale(1.2);
+}
+@media (max-width:1000px) {
+    .navigation__icons{
+        width: 50%;
+    }
+    .navigation__society{
+        width: 50%;
+    }
+}
+@media (max-width:770px) {
+    .header__navigation {
+        width: 85%;
+    }
+}
+@media (max-width:526px) {
+    .body__header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
